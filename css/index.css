@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    font-family: r;
+   
+    background-color: #F7ECDE;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.title {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    font-weight: 500px;
+    color: #352E28;
+    line-height: 60px;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 0;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: 5px;
+    width: 100%;
+    height: 20%;
+    background-color: #FEC260;
+    z-index: -1;
+
+    transition: width 0.5s ease-in-out, all 0.5s ease-in-out;
+}
+.title:hover::after {
+    width: 100%;
+    left: 0px;
+    height: 60%;
+}
+
+
+
+
+
+.subtitle {
+    font-size: 18px;
+    color: #5a8f5a;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-group input:focus{
+    border: rgba(243, 200, 130,.7) solid 3px;
+    outline: none;
+}
+
+
+.form-group label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.submit-btn {
+    background-color: #D1512D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #BB4120;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #f4f4f4;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.visit-btn {
+    background-color: #9aaf31;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.visit-btn:hover {
+    background-color: #9EB23B;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+.error-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.error-content {
+    font-family: "Righteous", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.error-content h3 {
+    color: #000000;
+    font-size: 21px;
+    font-style: solid;
+    margin-bottom: 10px;
+}
+
+.error-content p {
+    color: #333;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 50px;
+    cursor: pointer;
+}
+.pacifico-regular {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .righteous-regular {
+    font-family: "Righteous", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right,#1e803a, #dcd574);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    
+}
